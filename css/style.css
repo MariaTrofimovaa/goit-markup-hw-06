@@ -761,12 +761,12 @@ nav {
 
 .modal-icon {
   position: absolute;
-  left: 15px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   
 }
 
