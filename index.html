@@ -479,7 +479,9 @@
            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
                 <label class="modal-form-field">
-                    Имя
+                   
+                  <p class="form-checkbox">Имя</p>
+                    
                     <span class="modal-form-input-wrapper">
                         <input name="user-name" type="text" class="modal-form-input">
                         <svg class="modal-form-icon">
@@ -488,8 +490,10 @@
                     </span>
                 </label>
                 <label class="modal-form-field">
-                    Телефон
-                    <span class="modal-form-input-wrapper">
+                    
+                  <p class="form-checkbox">Телефон</p>
+                  
+                  <span class="modal-form-input-wrapper">
                         <input name="user-phone" type="tel" class="modal-form-input">
                         <svg class="modal-form-icon">
                           <use href="./img/sprite.svg#icon-phone"></use>
@@ -497,7 +501,9 @@
                     </span>
                 </label>
                 <label class="modal-form-field">
-                    Почта
+                    
+                  <p class="form-checkbox">Почта</p>
+
                     <span class="modal-form-input-wrapper">
                         <input name="user-email" type="mail" class="modal-form-input">
                         <svg class="modal-form-icon">
@@ -506,18 +512,27 @@
                     </span>
                 </label>
                 <label class="modal-form-field">
-                    Комментарий
-                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                    
+                  <p class="form-checkbox">Комментарий</p>
+                  
+                  <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
 
-                
+                <div class="checkbox-area">
                 <input type="checkbox" name="user-policy" value="user-policy-ok"
                     class="modal-form-policy visually-hidden" id="policy">
                 <label for="policy" class="contact-form-policy-label">
-                    Соглашаюсь с рассылкой и принимаю &nbsp;<a href="">Условия договора</a>
+
+                  <p class="form-checkbox">
+                    Соглашаюсь с рассылкой и принимаю &nbsp;
+                    <a href="">
+                      <span class="checkbox-conditions"> Условия договора</span>
+                    </a>
+                </p>
                 </label>
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
+            </div>
 
       </div>
     </div>

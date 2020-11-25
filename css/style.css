@@ -730,7 +730,11 @@ nav {
   height: 50px;
   margin-right: 12px;
   text-indent: 16px;
+  font-size: 16px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
   background-color: var(--accent-background-color);
+  color: rgba(255, 255, 255, 0.6);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -863,18 +867,16 @@ nav {
   display: flex;
   align-items: center;
   font-size: 12px;
-  margin-bottom: 30px;
 }
 
 .contact-form-policy-label::before {
   content: "";
   display: block;
   width: 16px;
-  height: 16px;
-  outline: 2px solid #000;
+  height: 15px;
+  background-image: url("../img/outline.svg");
   margin-right: 10px;
 
-  border-radius: 2px;
   background-position: center;
 }
 
@@ -892,6 +894,40 @@ nav {
 .modal-form-policy:checked + .contact-form-policy-label::before {
   background-image: url("../img/icon-check.svg");
   outline: none;
+}
+
+.form-checkbox {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 0.58;
+  letter-spacing: 0.03em;
+
+  color: var(--paragraph-color);
+}
+
+.form-checkbox:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.checkbox-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox-conditions {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 0.58;
+  letter-spacing: 0.03em;
+
+  text-decoration-line: underline;
+
+  color: var(--accent-color);
 }
 
 .modal-form-btn {
